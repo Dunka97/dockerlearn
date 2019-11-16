@@ -1,0 +1,4 @@
+FROM jdk:1.8
+WORKDIR /src
+COPY out/artifacts/HelloWorld_jar/HelloWorld.jar .
+CMD ["java","-jar","/src/HelloWorld.jar"]
